@@ -1,1 +1,10 @@
-.dropdown{}
+.dropdown{
+
+}
+
+.dropdown select{
+    width: 200px;
+    height: 5%;
+    border: 1px solid lightgoldenrodyellow;
+
+}
