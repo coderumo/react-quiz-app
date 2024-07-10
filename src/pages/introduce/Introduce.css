@@ -40,6 +40,11 @@
 
 }
 
+.introduce-btn.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
 .introduce img{
     width: 150px;
     height: auto;
