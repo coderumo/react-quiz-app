@@ -1,0 +1,220 @@
+{
+    "easy": [
+      {
+        "id": 1,
+        "question": "React nedir?",
+        "answers": ["Bir kütüphane", "Bir dil", "Bir çerçeve", "Bir veritabanı"],
+        "correct_answer": "Bir kütüphane",
+        "incorrect_answers": ["Bir dil", "Bir çerçeve", "Bir veritabanı"]
+      },
+      {
+        "id": 2,
+        "question": "React hangi programlama dilini kullanır?",
+        "answers": ["Python", "JavaScript", "Java", "C#"],
+        "correct_answer": "JavaScript",
+        "incorrect_answers": ["Python", "Java", "C#"]
+      },
+      {
+        "id": 3,
+        "question": "JSX nedir?",
+        "answers": ["JavaScript XML", "JavaScript Extension", "Java Syntax Extension", "Java Secure XML"],
+        "correct_answer": "JavaScript XML",
+        "incorrect_answers": ["JavaScript Extension", "Java Syntax Extension", "Java Secure XML"]
+      },
+      {
+        "id": 4,
+        "question": "Hangisi React'in temel özelliklerinden biri değildir?",
+        "answers": ["State", "Props", "Components", "Inheritance"],
+        "correct_answer": "Inheritance",
+        "incorrect_answers": ["State", "Props", "Components"]
+      },
+      {
+        "id": 5,
+        "question": "React için en yaygın kullanılan yönlendirme kütüphanesi nedir?",
+        "answers": ["React-Router", "Express", "Angular-Router", "Vue-Router"],
+        "correct_answer": "React-Router",
+        "incorrect_answers": ["Express", "Angular-Router", "Vue-Router"]
+      },
+      {
+        "id": 6,
+        "question": "React uygulamasının başlangıç noktası nedir?",
+        "answers": ["Index.js", "App.js", "Server.js", "Main.js"],
+        "correct_answer": "Index.js",
+        "incorrect_answers": ["App.js", "Server.js", "Main.js"]
+      },
+      {
+        "id": 7,
+        "question": "Hangisi bir React state yönetim kütüphanesi değildir?",
+        "answers": ["Redux", "MobX", "Flux", "AngularJS"],
+        "correct_answer": "AngularJS",
+        "incorrect_answers": ["Redux", "MobX", "Flux"]
+      },
+      {
+        "id": 8,
+        "question": "Hangi hook, bir bileşenin yaşam döngüsü boyunca bir kez çalışır?",
+        "answers": ["useEffect", "useState", "useContext", "useReducer"],
+        "correct_answer": "useEffect",
+        "incorrect_answers": ["useState", "useContext", "useReducer"]
+      },
+      {
+        "id": 9,
+        "question": "Props ne işe yarar?",
+        "answers": ["Veri depolamak", "Veri aktarmak", "Veri silmek", "Veri güncellemek"],
+        "correct_answer": "Veri aktarmak",
+        "incorrect_answers": ["Veri depolamak", "Veri silmek", "Veri güncellemek"]
+      },
+      {
+        "id": 10,
+        "question": "React Virtual DOM nedir?",
+        "answers": ["Gerçek DOM'un hızlı bir kopyası", "Veritabanı bağlantısı", "Bir tür web sunucusu", "JavaScript kütüphanesi"],
+        "correct_answer": "Gerçek DOM'un hızlı bir kopyası",
+        "incorrect_answers": ["Veritabanı bağlantısı", "Bir tür web sunucusu", "JavaScript kütüphanesi"]
+      }
+    ],
+    "medium": [
+      {
+        "id": 11,
+        "question": "React bileşenleri hangi metodlarla tanımlanabilir?",
+        "answers": ["Sınıf ve işlev", "Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"],
+        "correct_answer": "Sınıf ve işlev",
+        "incorrect_answers": ["Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"]
+      },
+      {
+        "id": 12,
+        "question": "React'te, bileşenin durumu nasıl güncellenir?",
+        "answers": ["setState()", "updateState()", "modifyState()", "changeState()"],
+        "correct_answer": "setState()",
+        "incorrect_answers": ["updateState()", "modifyState()", "changeState()"]
+      },
+      {
+        "id": 13,
+        "question": "React'te 'key' prop'u ne için kullanılır?",
+        "answers": ["Performansı artırmak için", "Tüm elemanları seçmek için", "Stil vermek için", "JavaScript kodu yazmak için"],
+        "correct_answer": "Performansı artırmak için",
+        "incorrect_answers": ["Tüm elemanları seçmek için", "Stil vermek için", "JavaScript kodu yazmak için"]
+      },
+      {
+        "id": 14,
+        "question": "React Fragment ne işe yarar?",
+        "answers": ["DOM'a ek eleman eklememek", "Veri göndermek", "Hızlı render yapmak", "Yeni state oluşturmak"],
+        "correct_answer": "DOM'a ek eleman eklememek",
+        "incorrect_answers": ["Veri göndermek", "Hızlı render yapmak", "Yeni state oluşturmak"]
+      },
+      {
+        "id": 15,
+        "question": "Hangisi React Hooks'un bir örneğidir?",
+        "answers": ["useEffect", "useData", "useScript", "useStyle"],
+        "correct_answer": "useEffect",
+        "incorrect_answers": ["useData", "useScript", "useStyle"]
+      },
+      {
+        "id": 16,
+        "question": "Context API ne işe yarar?",
+        "answers": ["Veri tabanı işlemleri için", "Bileşenler arası veri aktarımı için", "HTTP istekleri için", "Animasyonlar için"],
+        "correct_answer": "Bileşenler arası veri aktarımı için",
+        "incorrect_answers": ["Veri tabanı işlemleri için", "HTTP istekleri için", "Animasyonlar için"]
+      },
+      {
+        "id": 17,
+        "question": "Higher Order Component (HOC) nedir?",
+        "answers": ["Bir bileşeni parametre olarak alıp yeni bir bileşen döndüren bir fonksiyon", "Bir JavaScript fonksiyonu", "Bir veritabanı sorgusu", "Bir CSS kuralı"],
+        "correct_answer": "Bir bileşeni parametre olarak alıp yeni bir bileşen döndüren bir fonksiyon",
+        "incorrect_answers": ["Bir JavaScript fonksiyonu", "Bir veritabanı sorgusu", "Bir CSS kuralı"]
+      },
+      {
+        "id": 18,
+        "question": "React'te, bir liste elemanı render edilirken 'key' prop'u neden önemlidir?",
+        "answers": ["Güvenlik için", "Benzersiz tanımlayıcı sağlamak için", "Stil uygulamak için", "Yazım hatalarını önlemek için"],
+        "correct_answer": "Benzersiz tanımlayıcı sağlamak için",
+        "incorrect_answers": ["Güvenlik için", "Stil uygulamak için", "Yazım hatalarını önlemek için"]
+      },
+      {
+        "id": 19,
+        "question": "useReducer Hook'u ne zaman kullanılır?",
+        "answers": ["Kompleks durum mantığı için", "Basit durum güncellemeleri için", "Yalnızca veri çekmek için", "Komponentleri yeniden boyutlandırmak için"],
+        "correct_answer": "Kompleks durum mantığı için",
+        "incorrect_answers": ["Basit durum güncellemeleri için", "Yalnızca veri çekmek için", "Komponentleri yeniden boyutlandırmak için"]
+      },
+      {
+        "id": 20,
+        "question": "React'te memoization ne amaçla kullanılır?",
+        "answers": ["Hafıza kullanımını azaltmak için", "Kodu daha temiz hale getirmek için", "CSS stillerini yönetmek için", "Veritabanı sorgularını hızlandırmak için"],
+        "correct_answer": "Hafıza kullanımını azaltmak için",
+        "incorrect_answers": ["Kodu daha temiz hale getirmek için", "CSS stillerini yönetmek için", "Veritabanı sorgularını hızlandırmak için"]
+      }
+    ],
+    "hard": [
+      {
+        "id": 21,
+        "question": "React bileşenleri hangi metodlarla tanımlanabilir?",
+        "answers": ["Sınıf ve işlev", "Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"],
+        "correct_answer": "Sınıf ve işlev",
+        "incorrect_answers": ["Yöntem ve işlev", "Sınıf ve döngü", "Yöntem ve döngü"]
+      },
+      {
+        "id": 22,
+        "question": "React'te, bileşenin durumu nasıl güncellenir?",
+        "answers": ["setState()", "updateState()", "modifyState()", "changeState()"],
+        "correct_answer": "setState()",
+        "incorrect_answers": ["updateState()", "modifyState()", "changeState()"]
+      },
+      {
+        "id": 23,
+        "question": "React'te 'key' prop'u ne için kullanılır?",
+        "answers": ["Performansı artırmak için", "Tüm elemanları seçmek için", "Stil vermek için", "JavaScript kodu yazmak için"],
+        "correct_answer": "Performansı artırmak için",
+        "incorrect_answers": ["Tüm elemanları seçmek için", "Stil vermek için", "JavaScript kodu yazmak için"]
+      },
+      {
+        "id": 24,
+        "question": "React Fragment ne işe yarar?",
+        "answers": ["DOM'a ek eleman eklememek", "Veri göndermek", "Hızlı render yapmak", "Yeni state oluşturmak"],
+        "correct_answer": "DOM'a ek eleman eklememek",
+        "incorrect_answers": ["Veri göndermek", "Hızlı render yapmak", "Yeni state oluşturmak"]
+      },
+      {
+        "id": 25,
+        "question": "Hangisi React Hooks'un bir örneğidir?",
+        "answers": ["useEffect", "useData", "useScript", "useStyle"],
+        "correct_answer": "useEffect",
+        "incorrect_answers": ["useData", "useScript", "useStyle"]
+      },
+      {
+        "id": 26,
+        "question": "Context API ne işe yarar?",
+        "answers": ["Veri tabanı işlemleri için", "Bileşenler arası veri aktarımı için", "HTTP istekleri için", "Animasyonlar için"],
+        "correct_answer": "Bileşenler arası veri aktarımı için",
+        "incorrect_answers": ["Veri tabanı işlemleri için", "HTTP istekleri için", "Animasyonlar için"]
+      },
+      {
+        "id": 27,
+        "question": "Higher Order Component (HOC) nedir?",
+        "answers": ["Bir bileşeni parametre olarak alıp yeni bir bileşen döndüren bir fonksiyon", "Bir JavaScript fonksiyonu", "Bir veritabanı sorgusu", "Bir CSS kuralı"],
+        "correct_answer": "Bir bileşeni parametre olarak alıp yeni bir bileşen döndüren bir fonksiyon",
+        "incorrect_answers": ["Bir JavaScript fonksiyonu", "Bir veritabanı sorgusu", "Bir CSS kuralı"]
+      },
+      {
+        "id": 28,
+        "question": "React'te, bir liste elemanı render edilirken 'key' prop'u neden önemlidir?",
+        "answers": ["Güvenlik için", "Benzersiz tanımlayıcı sağlamak için", "Stil uygulamak için", "Yazım hatalarını önlemek için"],
+        "correct_answer": "Benzersiz tanımlayıcı sağlamak için",
+        "incorrect_answers": ["Güvenlik için", "Stil uygulamak için", "Yazım hatalarını önlemek için"]
+      },
+      {
+        "id": 29,
+        "question": "useReducer Hook'u ne zaman kullanılır?",
+        "answers": ["Kompleks durum mantığı için", "Basit durum güncellemeleri için", "Yalnızca veri çekmek için", "Komponentleri yeniden boyutlandırmak için"],
+        "correct_answer": "Kompleks durum mantığı için",
+        "incorrect_answers": ["Basit durum güncellemeleri için", "Yalnızca veri çekmek için", "Komponentleri yeniden boyutlandırmak için"]
+      },
+      {
+        "id": 30,
+        "question": "React'te memoization ne amaçla kullanılır?",
+        "answers": ["Hafıza kullanımını azaltmak için", "Kodu daha temiz hale getirmek için", "CSS stillerini yönetmek için", "Veritabanı sorgularını hızlandırmak için"],
+        "correct_answer": "Hafıza kullanımını azaltmak için",
+        "incorrect_answers": ["Kodu daha temiz hale getirmek için", "CSS stillerini yönetmek için", "Veritabanı sorgularını hızlandırmak için"]
+      }
+    ]
+    
+  }
+  

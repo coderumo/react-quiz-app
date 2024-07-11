@@ -1,5 +1,5 @@
-import React from 'react'
-import './Dropdown.css'
+import React from 'react';
+import './Dropdown.css';
 
 const Dropdown = ({ data, setDifficultyChange }) => {
   return (
@@ -13,7 +13,7 @@ const Dropdown = ({ data, setDifficultyChange }) => {
         ))}
       </select>
     </div>
-  )
-}
+  );
+};
 
-export default Dropdown
+export default Dropdown;

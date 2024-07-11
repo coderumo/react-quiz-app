@@ -1,38 +1,38 @@
-import React, { useEffect, useState } from 'react'
-import './QuestionCard.css'
+import React, { useEffect, useState } from 'react';
+import './QuestionCard.css';
 
 const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, setModal }) => {
-  const [timer, setTimer] = useState(30)
+  const [timer, setTimer] = useState(30);
 
   const approvedChoice = (e) => {
-    const checkAnswer = e.currentTarget.value === questionsData[count]?.correct_answer
-    if (checkAnswer) setScore(score + 100)
+    const checkAnswer = e.currentTarget.value === questionsData[count]?.correct_answer;
+    if (checkAnswer) setScore(score + 100);
 
     if (count < 9) {
-      setCount(count + 1)
-      setTimer(30)
+      setCount(count + 1);
+      setTimer(30);
     } else {
-      setModal(true)
+      setModal(true);
     }
-  }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (timer > 0) {
-        setTimer(timer - 1)
+        setTimer(timer - 1);
       } else if (timer === 0 && count < 9) {
-        setCount(count + 1)
-        setTimer(30)
+        setCount(count + 1);
+        setTimer(30);
       } else if (count >= 9) {
-        setModal(true)
-        clearInterval(interval)
+        setModal(true);
+        clearInterval(interval);
       }
-    }, 1000)
+    }, 1000);
 
     return () => {
-      clearInterval(interval)
-    }
-  }, [timer, count])
+      clearInterval(interval);
+    };
+  }, [timer, count]);
 
   return (
     <div className='questionCard'>
@@ -44,7 +44,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         ))
       }
     </div>
-  )
-}
+  );
+};
 
-export default QuestionCard
+export default QuestionCard;

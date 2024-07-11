@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react'
-import './Quiz.css'
-import * as api from '../../api/api'
-import { useParams } from 'react-router-dom'
-import QuestionCard from '../../components/questionCard/QuestionCard'
-import Modal from '../../components/modal/Modal'
+import React, { useEffect, useState } from 'react';
+import './Quiz.css';
+import { fetchQuizData } from '../../api/api';
+import { useParams } from 'react-router-dom';
+import QuestionCard from '../../components/questionCard/QuestionCard';
+import Modal from '../../components/modal/Modal';
 
 const Quiz = () => {
-  const { difficulty, amount } = useParams()
-  const [questionsData, setQuestionsData] = useState([])
-  const [score, setScore] = useState(0)
-  const [count, setCount] = useState(0)
-  const [modal, setModal] = useState(false)
+  const { difficulty, amount } = useParams();
+  const [questionsData, setQuestionsData] = useState([]);
+  const [score, setScore] = useState(0);
+  const [count, setCount] = useState(0);
+  const [modal, setModal] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
-      const data = await api.fetchQuizData(difficulty, amount)
-      setQuestionsData(data)
-    }
-    getData()
-  }, [difficulty, amount])
-
-  console.log(questionsData, "question Data")
+      const data = await fetchQuizData(difficulty, amount);
+      setQuestionsData(data);
+    };
+    getData();
+  }, [difficulty, amount]);
 
   return (
     <div className='quiz'>
@@ -37,7 +35,7 @@ const Quiz = () => {
         />
       }
     </div>
-  )
-}
+  );
+};
 
-export default Quiz
+export default Quiz;

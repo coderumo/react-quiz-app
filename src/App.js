@@ -1,5 +1,5 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Introduc from './pages/introduce/Introduc';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Introduce from './pages/introduce/Introduc';
 import Quiz from './pages/quiz/Quiz';
 
 function App() {
@@ -7,9 +7,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path='/' element={<Introduc/>}/>
-          <Route path='/quiz/:difficulty/:amount' element={<Quiz/>}/>
-        
+          <Route path='/' element={<Introduce />} />
+          <Route path='/quiz/:difficulty/:amount' element={<Quiz />} />
         </Routes>
       </Router>
     </div>
