@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Dropdown.css';
 
-const Dropdown = ({ data, setDifficultyChange }) => {
+const Dropdown = ({ data, setDifficultyChange, difficultyChange }) => {
+  useEffect(() => {
+    if (difficultyChange && difficultyChange !== "Lütfen zorluk düzeyi seçin") {
+      console.log(`Seçilen zorluk derecesi: ${difficultyChange}`);
+    }
+  }, [difficultyChange]);
+
   return (
     <div className='dropdown'>
       <select onChange={e => setDifficultyChange(e.target.value)} defaultValue="Lütfen zorluk düzeyi seçin">

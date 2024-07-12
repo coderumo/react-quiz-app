@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import './QuestionCard.css';
 
-const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, setModal }) => {
+const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, setModal, setIncorrectAnswers }) => {
   const [timer, setTimer] = useState(30);
 
   const approvedChoice = (e) => {
-    const checkAnswer = e.currentTarget.value === questionsData[count]?.correct_answer;
-    if (checkAnswer) setScore(score + 100);
+    const selectedAnswer = e.currentTarget.value;
+    const checkAnswer = selectedAnswer === questionsData[count]?.correct_answer;
+    
+    if (checkAnswer) {
+      setScore(score + 100);
+    } else {
+      setIncorrectAnswers(prev => [
+        ...prev,
+        {
+          question: questionsData[count]?.question,
+          selectedAnswer,
+          correctAnswer: questionsData[count]?.correct_answer
+        }
+      ]);
+    }
 
     if (count < 9) {
       setCount(count + 1);
@@ -34,7 +47,9 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
     };
   }, [timer, count]);
 
+
   return (
+    
     <div className='questionCard'>
       <div className='questionCard-timer'>{timer}</div>
       <div className='questionCard-title'>{count + 1}/10 - {questionsData[count]?.question}</div>
@@ -45,6 +60,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
       }
     </div>
   );
+  
 };
 
 export default QuestionCard;
