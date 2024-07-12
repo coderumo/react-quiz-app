@@ -1,38 +1,20 @@
+/* QuestionCard.css */
 .questionCard {
+    position: relative; /* Ensure relative positioning for absolute timer positioning */
     padding: 30px;
     max-width: 700px;
     width: 100%;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #EECEB9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     text-align: center;
-}
-
-.questionCard-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #484D4D;
-    margin-bottom: 20px;
-}
-
-.questionCard button {
-    width: 45%;
-    margin: 10px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #f0f8ff;
-    transition: background-color 0.3s;
-}
-
-.questionCard button:hover {
-    background-color: #dcdcdc;
-}
-
-.questionCard-timer {
+  }
+  
+  .questionCard-timer {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust left position as needed */
     width: 60px;
     height: 60px;
     font-size: 25px;
@@ -43,5 +25,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 20px auto;
-}
+  }
+  
+  .questionCard-content {
+    margin-top: 70px; /* Ensure space below the timer for question content */
+  }
+  
+  .questionCard-title {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .questionCard .question-number {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #987D9A; 
+  }
+  
+  .questionCard .total-number {
+    color: #987D9A;
+  }
+  
+  .questionCard button {
+    width: 45%;
+    margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f0f8ff;
+    transition: background-color 0.3s;
+  }
+  
+  .questionCard button:hover {
+    background-color: #a59f9f;
+  }
+  

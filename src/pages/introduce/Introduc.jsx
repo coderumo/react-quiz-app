@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Introduce.css';
 import Dropdown from '../../components/dropdown/Dropdown';
-import logo from '../../images/logo3.png';
+import logo from '../../images/logoo.png';
 import { useNavigate } from 'react-router-dom';
 
 const Introduc = () => { 
-    const difficulty = ["easy", "medium", "hard"];
+    const difficulty = ["Easy", "Medium", "Hard"];
     const [difficultyChange, setDifficultyChange] = useState('');
     const navigate = useNavigate();
     const TOTAL_QUESTIONS = 10;
@@ -19,9 +19,10 @@ const Introduc = () => {
     return (
       <div className='introduce'>
         <div className="introduce-container">
-          <img src={logo} alt="Logo" />
+          <img className='logo' src={logo} alt="Logo" />
           <Dropdown data={difficulty} setDifficultyChange={setDifficultyChange} difficultyChange={difficultyChange} />
-          <p className='p'>Her soru 30 saniyedir</p>
+          <p className='p'>Her soru 30 saniyedir
+          </p>
           <div 
             onClick={startQuiz} 
             className={`introduce-btn ${!difficultyChange || difficultyChange === "Lütfen zorluk düzeyi seçin" ? 'disabled' : ''}`}

@@ -5,9 +5,9 @@
 }
 
 .dropdown select {
-    width: 220px;
-    height: 40px;
-    border: 1px solid #ffd700;
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid #987D9A;
     border-radius: 5px;
     padding: 5px;
     font-size: 16px;
