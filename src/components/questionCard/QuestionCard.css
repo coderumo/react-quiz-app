@@ -9,12 +9,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     text-align: center;
-  }
-  
-  .questionCard-timer {
+}
+
+.questionCard-timer {
     position: absolute;
-    top: 10px; /* Adjust top position as needed */
-    left: 10px; /* Adjust left position as needed */
+    top: 10px; 
+    left: 10px; 
     width: 60px;
     height: 60px;
     font-size: 25px;
@@ -25,31 +25,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .questionCard-content {
-    margin-top: 70px; /* Ensure space below the timer for question content */
-  }
-  
-  .questionCard-title {
+}
+
+.questionCard-content {
+    margin-top: 70px; 
+}
+
+.questionCard-title {
     text-align: left;
     font-size: 1.8rem;
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
-  }
-  
-  .questionCard .question-number {
+}
+
+.questionCard .question-number {
     font-size: 2.5rem; 
     font-weight: bold;
     color: #987D9A; 
-  }
-  
-  .questionCard .total-number {
+}
+
+.questionCard .total-number {
     color: #987D9A;
-  }
-  
-  .questionCard button {
+}
+
+.questionCard button {
     width: 45%;
     margin: 10px;
     border: 1px solid lightgray;
@@ -59,9 +59,29 @@
     font-size: 16px;
     background-color: #f0f8ff;
     transition: background-color 0.3s;
-  }
-  
-  .questionCard button:hover {
+}
+
+.questionCard button:hover {
     background-color: #a59f9f;
-  }
-  
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    width: 30%;
+    border: 1px solid rgb(135, 66, 66);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f0f8ff;
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background-color: #a59f9f;
+}

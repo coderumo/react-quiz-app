@@ -13,7 +13,7 @@ const Quiz = () => {
   const [modal, setModal] = useState(false);
   const [incorrectAnswers, setIncorrectAnswers] = useState([]);
   const [unansweredCount, setUnansweredCount] = useState(0); 
-  const [totalTimeUsed, setTotalTimeUsed] = useState(0); 
+  const [totalTimeUsed, setTotalTimeUsed] = useState(0);
 
   useEffect(() => {
     const getData = async () => {
@@ -24,10 +24,29 @@ const Quiz = () => {
     getData();
   }, [difficulty, amount]);
 
+  const handleNext = () => {
+    if (count < questionsData.length - 1) {
+      setCount(count + 1);
+    } else {
+      setModal(true);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+
   return (
     <div className='quiz'>
       {modal ? (
-        <Modal score={score} incorrectAnswers={incorrectAnswers} unansweredCount={unansweredCount} totalTimeUsed={totalTimeUsed} />
+        <Modal 
+          score={score} 
+          incorrectAnswers={incorrectAnswers} 
+          unansweredCount={unansweredCount} 
+          totalTimeUsed={totalTimeUsed} 
+        />
       ) : (
         <QuestionCard
           questionsData={questionsData}
@@ -35,6 +54,8 @@ const Quiz = () => {
           setScore={setScore}
           count={count}
           setCount={setCount}
+          handleNext={handleNext}
+          handlePrevious={handlePrevious}
           modal={modal}
           setModal={setModal}
           setIncorrectAnswers={setIncorrectAnswers}

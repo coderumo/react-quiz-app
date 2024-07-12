@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './QuestionCard.css';
 
-const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, setModal, setIncorrectAnswers, unansweredCount, setUnansweredCount, totalTimeUsed, setTotalTimeUsed }) => {
+const QuestionCard = ({ questionsData, score, setScore, count, setCount, handleNext, handlePrevious, modal, setModal, setIncorrectAnswers, unansweredCount, setUnansweredCount, totalTimeUsed, setTotalTimeUsed }) => {
   const [timer, setTimer] = useState(30);
   const [answered, setAnswered] = useState(false); 
 
@@ -25,7 +25,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
     setAnswered(true);
 
     if (count < 9) {
-      setCount(count + 1);
+      handleNext();
       setTimer(30);
     } else {
       setModal(true);
@@ -38,7 +38,7 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
         setTimer(timer - 1);
         setTotalTimeUsed((prevTime) => prevTime + 1);
       } else if (timer === 0 && count < 9 && !answered) {
-        setCount(count + 1);
+        handleNext();
         setTimer(30);
         setUnansweredCount(unansweredCount + 1);
       } else if (count >= 9) {
@@ -73,6 +73,10 @@ const QuestionCard = ({ questionsData, score, setScore, count, setCount, modal, 
             {answer}
           </button>
         ))}
+        <div className='navigation-buttons'>
+          <button onClick={handlePrevious} disabled={count === 0}>Önceki Soru</button>
+          <button onClick={handleNext} disabled={count === questionsData.length - 1}>Sonraki Soru</button>
+        </div>
       </div>
     </div>
   );
